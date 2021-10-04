@@ -1,0 +1,15 @@
+@startuml architecture
+!theme hacker
+participant "Original Data\ndf" as df
+participant "Scaled Data\ndf_scale" as df_scale
+participant "PCA Data\nprincipalDf" as principalDf
+participant "Recovered Data\nrecon_scalerDF" as recon_scalerDF
+participant "Error Data\nerrorDF" as errorDF
+
+df -> df_scale: scaler.fit_transform()
+df_scale -> principalDf: pca.fit_transform()
+principalDf -> recon_scalerDF: pca.inverse_transform()
+df --> errorDF
+recon_scalerDF --> errorDF
+
+@enduml
