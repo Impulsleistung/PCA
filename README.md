@@ -10,7 +10,7 @@
 
 Source: [Michael Galarnyk](https://towardsdatascience.com/pca-using-python-scikit-learn-e653f8989e60), 2017
 
-![Architecture](architecture\arch.png)
+![Architecture](arch.png)
 
 
 ```python
