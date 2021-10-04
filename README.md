@@ -8,7 +8,6 @@
 1. Encode-Decode **complex** data
 1. **Variance-Optimum** for data-compression
 
-Source: [Michael Galarnyk](https://towardsdatascience.com/pca-using-python-scikit-learn-e653f8989e60), 2017
 
 ![Architecture](arch.png)
 
@@ -212,4 +211,6 @@ sns.boxplot(data=errorDF,   ax=axes[2], orient="v", color='grey').set_title('Err
 * There's no offset error: The mean-error is centered to 0
 * The [IQR](https://en.wikipedia.org/wiki/Box_plot) of the error plot shows that around 50% of all recovered data is around +- 0.1 in bound of its absolute value
 
-
+## Sources
+* [Michael Galarnyk](https://towardsdatascience.com/pca-using-python-scikit-learn-e653f8989e60), 2017
+* [Scikit](https://scikit-learn.org/stable/), 2021
